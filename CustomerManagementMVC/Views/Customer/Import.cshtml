@@ -1,0 +1,9 @@
+﻿<h2>Import Clients</h2>
+
+<form asp-action="Import" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="xmlFilePath">Choose XML File:</label>
+        <input type="file" name="xmlFilePath" class="form-control-file" id="xmlFilePath">
+    </div>
+    <button type="submit" class="btn btn-primary">Import</button>
+</form>

@@ -1,0 +1,42 @@
+﻿@model CustomerManagementMVC.Models.Customer
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Addresses</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @foreach (var address in Model.Addresses)
+        {
+            <dt>Address Type</dt>
+            <dd>@address.AddressType</dd>
+            <dt>Address Line</dt>
+            <dd>@address.AddressLine</dd>
+        }
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+

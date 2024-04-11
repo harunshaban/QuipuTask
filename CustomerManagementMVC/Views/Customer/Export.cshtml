@@ -1,0 +1,16 @@
+﻿@* @{
+    ViewData["Title"] = "Export";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Assuming there is a layout file
+} *@
+
+<h2>Export Clients</h2>
+
+<p>Click the button below to export client data as a JSON file.</p>
+<form asp-action="Export" method="post">
+    <label>Sort By:</label>
+    <select name="sortBy">
+        <option value="name">Name</option>
+        <option value="dob">Date of Birth</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Export</button>
+</form>

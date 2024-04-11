@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customer>
+    <Id>774c2a35-3c71-45d4-2831-08dc59c01313</Id>
+    <Name>hej</Name>
+    <BirthDate>2024-04-12T00:00:00</BirthDate>
+  </Customer>
+</Clients>
